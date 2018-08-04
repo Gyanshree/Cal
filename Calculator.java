@@ -4,7 +4,7 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-    	double num1, num2;
+    	double n1, n2;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number:");
 
@@ -25,19 +25,19 @@ public class Calculator {
         switch(operator)
         {
             case '+':
-            	output = num1 + num2;
+            	output = n1 + n2;
                 break;
 
             case '-':
-            	output = num1 - num2;
+            	output = n1 - n2;
                 break;
 
             case '*':
-            	output = num1 * num2;
+            	output = n1 * n2;
                 break;
 
             case '/':
-            	output = num1 / num2;
+            	output = n1 / n2;
                 break;
 
             /* If user enters any other operator or char apart from
@@ -49,6 +49,6 @@ public class Calculator {
                 return;
         }
 
-        System.out.println(num1+" "+operator+" "+num2+": "+output);
+        System.out.println(n1+" "+operator+" "+n2+": "+output);
     }
 }
